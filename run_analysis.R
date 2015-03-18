@@ -1,4 +1,4 @@
-#url - path to UCI HAR Dataset folder, for instance "~/data/HCI Har Dataset/"
+#url - path to UCI HAR Dataset folder, for instance "~/data/UCI HAR Dataset/"
 run_analysis <- function(url) {
   
   #reading activity labels and feature names
@@ -37,4 +37,6 @@ run_analysis <- function(url) {
   x <- group_by(x, subject, activity)
   x <- mutate_each(x, funs(mean))
   x <- unique(x)
+  
+  write.table(x, file = "tidyData.txt", row.names = FALSE)
 }
