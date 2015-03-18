@@ -1,1 +1,3 @@
 # GettingAndCleaningData
+
+The repository contains a script for processing the accelerometer data from [this website] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). To run it, source *run_analysis.md* and run the function *run_analysis(url)*, where *url* is the path to your UCI HAR Dataset folder, for instance *"~/data/UCI HAR Dataset/"*. It should create the *tidyData.txt* file in your working directory with the tidy data set.
